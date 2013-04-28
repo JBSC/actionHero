@@ -74,7 +74,7 @@ var actions = function(api, next){
   
   var validateAction = function(action){
     var fail = function(msg){
-      api.log(msg + "; exiting.", emerg);
+      api.log(msg + "; exiting.", api.logger.levels['emerg']);
       process.exit();
     }
 
